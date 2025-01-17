@@ -8,7 +8,7 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ name, role }) => {
     return (
         <header className="py-2 text-center"> {/* Padding verticale e allineamento al centro */}
-            <h1 className=" font-bold tracking-tight text-red-400"> {/* Nome */}
+            <h1 className=" font-bold tracking-tight text-purple-700"> {/* Nome */}
                 {name}
             </h1>
             <p className="min-w-full whitespace-nowrap mt-2 text-blue-300 font-bold "> {/* Ruolo */}
