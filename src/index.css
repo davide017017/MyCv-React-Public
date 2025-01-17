@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --vscode-foreground: #d4d4d4;
+  --vscode-background: #1e1e1e;
+  --vscode-lighter-background: #282c34;
+  --vscode-border: #3e4451;
+  --vscode-blue: #9cdcfe;
+  --vscode-green: #6a9955;
+  --vscode-darker-gray: #3f3f3f;
+  --vscode-light-gray: #b3afb1;
+  --vscode-yellow: #dcdcaa;
+  --vscode-orange: #ce9178;
+  --vscode-purple: #c586c0;
+  --vscode-cyan: #4ec9b0;
+  --vscode-pink: #d16969;
+  --vscode-light-blue: #4fc1ff;
+  --vscode-light-green: #c3e88d;
+  --vscode-light-red: #ff5370;
+  --vscode-light-purple: #c792ea;
+  --vscode-light-cyan: #80cbc4;
+  --vscode-light-pink: #f07178;
+  --vscode-light-yellow: #ffcb6b;
+  
+  --font-family-base: 'Consolas', 'Courier New', monospace;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #1f1f1f;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  font: 100%/1.5 var(--font-family-base);
+}
+h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: normal;
+}
+h2 {
+  font-size: 1.875rem;
+  font-weight: 600;
+  line-height: normal;
+}
+h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: normal;
+}
+
+a {
+  font-weight: 500;
+  color: var(--vscode-blue);
+  text-decoration: inherit;
+  white-space: nowrap;
+  font-size: 1.5rem;
+  line-height:normal;
+}
+a:hover {
+  color: var(--vscode-light-cyan);
+  text-decoration:underline;
+}
+
+@media print {
+  @page {
+      size: A4; 
+      margin: 0; 
+  }
+  body {
+      font-size: 7pt;
+      margin: 0;
+  }
+  li {
+      page-break-inside: avoid;
+  }
+  li {
+      margin-bottom: 0;
+      margin-top: 0;
+      padding: 0;
+  }
+  h2 {
+      margin-bottom: 0;
+  }
+  h3 {
+      margin-bottom: 0;
+      padding: 0;
+  }
+  p {
+      margin-bottom: 0;
+  }
+  div {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
