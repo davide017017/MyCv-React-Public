@@ -1,65 +1,93 @@
-import React from 'react';
-import Layout from './components/TwoColumnsLayout';
-import Header from './components/Header';
-import AboutMe from './components/AboutMe';
-import Education from './components/Education';
-import WorkExperience from './components/WorkExperience';
-import RoundPhoto from './components/Photo';
-import Photo from './assets/img/photodavidemartinico.jpg';
-import ContactCard from './components/Contact';
-import SkillsSection from './components/Skills';
-import Languages from './components/Languages';
-import Interests from './components/Interest';
-import License from './components/Patent';
-import Consent from './components/Aut&Other';
+import { useState } from 'react';
+import CVPage from './components/CVPage';
+import './styles/print.css';
 
-const App: React.FC = () => {
-  
-  const miaDataDiNascita = new Date('1990-02-20');
-  
-  interface Language {
-    name: string;
-    level: string; 
-  }
+function App() {
+  const [theme, setTheme] = useState<'dark' | 'light'>('dark');
+  const [printMode, setPrintMode] = useState<'print-dark' | 'print-light'>('print-dark');
 
-  const myLanguages: Language[] = [
-    { name: 'Italiano', level: 'Madrelingua' },
-    { name: 'Inglese', level: 'B2' },
-  ];
+  const toggleTheme = () => {
+    const newTheme = theme === 'dark' ? 'light' : 'dark';
+    setTheme(newTheme);
+    document.documentElement.classList.toggle('light', newTheme === 'light');
+  };
+
+  const handlePrint = () => {
+    document.body.className = printMode;
+    window.print();
+  };
 
   return (
-    <Layout
-      leftColumn={
-        <div className=''>
-          <Header name="Davide Martinico" role="&lt;Sviluppatore full stack junior&gt;" />
-          <AboutMe />
-          <Education />
-          <WorkExperience /> 
-        </div>
-      }
-      rightColumn={
-        <>
-          <div className='flex justify-center pt-6 '>
-            <RoundPhoto src={Photo} alt="Profile photo of Davide Martinico" />
-          </div>
-          <div className='flex justify-center pt-4'>
-            <ContactCard
-              email="davide017@hotmail.it"
-              phone="340 3496620"
-              github="davide017017"
-              birthDate={miaDataDiNascita}
+    <div className="bg-[var(--color-bg)] text-[var(--color-text)] min-h-screen">
+      {/* 🔁 Selettore tema UI */}
+      <div className="print:hidden border-b-4 border-[var(--color-primary)] py-6 flex flex-col items-center gap-2 bg-[var(--color-theme-banner)]">
+        <div className="flex items-center gap-2">
+          <span className="text-sm">🌙</span>
+          <button
+            onClick={toggleTheme}
+            className={`relative w-14 h-7 rounded-full transition-colors duration-300 flex items-center
+              ${theme === 'dark' ? 'bg-[var(--color-primary)]' : 'bg-yellow-400'}`}
+          >
+            <span
+              className={`w-6 h-6 rounded-full transition-transform duration-300 absolute
+                ${
+                  theme === 'dark'
+                    ? 'translate-x-[2px] bg-[var(--color-bg)]'
+                    : 'translate-x-[30px] bg-white'
+                }`}
             />
+          </button>
+          <span className="text-sm">☀️</span>
+        </div>
+        <p className="text-xs text-[var(--color-muted)]">
+          Tema attuale: <strong>{theme === 'dark' ? 'Scuro' : 'Chiaro'}</strong>
+        </p>
+      </div>
+
+      {/* 📄 Contenuto del CV */}
+      <CVPage />
+
+      {/* 🖨️ Selettore stampa */}
+      <div className="print:hidden border-t-4 border-[var(--color-primary)] shadow-inner bg-[var(--color-banner-footer)]">
+        <div className="max-w-[1280px] mx-auto px-6 py-6 flex justify-center items-center gap-6 flex-wrap">
+          {/* Toggle stampa */}
+          <div className="flex flex-col items-center gap-2">
+            <div className="flex items-center gap-2">
+              <span className="text-sm">🌙</span>
+              <button
+                onClick={() =>
+                  setPrintMode((prev) => (prev === 'print-dark' ? 'print-light' : 'print-dark'))
+                }
+                className={`relative w-14 h-7 rounded-full transition-colors duration-300 flex items-center
+                  ${printMode === 'print-dark' ? 'bg-[var(--color-primary)]' : 'bg-yellow-400'}`}
+              >
+                <span
+                  className={`w-6 h-6 rounded-full transition-transform duration-300 absolute
+                    ${
+                      printMode === 'print-dark'
+                        ? 'translate-x-[2px] bg-[var(--color-bg)]'
+                        : 'translate-x-[30px] bg-white'
+                    }`}
+                />
+              </button>
+              <span className="text-sm">☀️</span>
+            </div>
+            <p className="text-xs text-[var(--color-muted)]">
+              Modalità stampa: <strong>{printMode === 'print-dark' ? 'Scura' : 'Chiara'}</strong>
+            </p>
           </div>
 
-          <SkillsSection />
-          <Languages languages={myLanguages} />
-          <Interests interests={[{ name: 'Informatica' }, { name: 'Giardinaggio' }, { name: 'Manga' }, { name: 'Viaggi' }, { name: 'Batteria (strumento musicale)' }, { name: 'Cucina' }]} />
-          <License licenseType="B" />
-          <Consent text={`Autorizzo il trattamento dei miei dati personali ai sensi del Dlgs 196 del 30 giugno 2003 e dell'art. 13 GDPR`} />
-        </>
-      }
-    />
+          {/* Bottone stampa */}
+          <button
+            onClick={handlePrint}
+            className="px-4 py-1.5 rounded text-sm font-semibold bg-[var(--color-primary)] text-white border border-[var(--color-primary)] shadow hover:brightness-110 transition"
+          >
+            📄 Stampa (o Salva PDF)
+          </button>
+        </div>
+      </div>
+    </div>
   );
-};
+}
 
 export default App;

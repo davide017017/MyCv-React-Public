@@ -1,0 +1,10 @@
+/* 🔗 Import sezioni */
+@import './Custom/variables.css';
+@import './Custom/base.css';
+
+/* -----------------------------------------
+  ✅ Tailwind Base & Utilities
+------------------------------------------ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

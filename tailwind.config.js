@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       minWidth: {
       '1/2': '50%', // Aggiungi la tua classe personalizzata
-    },
+      },
       colors: {
         'vscode-foreground': 'var(--vscode-foreground)',
         'vscode-background': 'var(--vscode-background)',
@@ -33,6 +33,15 @@ module.exports = {
       },
       fontFamily: {
         'vscode-base': 'var(--font-family-base)',
+      },
+      fontSize: {
+        xs: '14px',
+        sm: '16px',
+        base: '18px',     // <– base più grande e leggibile
+        lg: '20px',
+        xl: '24px',
+        '2xl': '30px',
+        '3xl': '36px',
       },
     }, 
   },

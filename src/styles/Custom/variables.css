@@ -1,0 +1,111 @@
+/* ===== Modalità Dark (default) ===== */
+:root {
+  /* Tipografia */
+  --font-family-base: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+
+  /* Colori base */
+  --color-text: #eaeaea;
+  --color-muted: #b3afb1;
+  --color-border: #3e4451;
+  --color-theme-banner: #2d322d;
+  --color-banner-footer: #2d322d;
+
+  /* Sfondi */
+  --color-bg: #1e1e1e;
+  --color-bg-light: #2c2c2c;
+  --color-card-bg: #2b2b2b;
+
+  /* Colori principali */
+  --color-primary: #4fc1ff;
+  --color-primary-light: #81d4fa;
+  --color-primary-dark: #039be5;
+
+  /* Colori secondari */
+  --color-secondary: #c3e88d;
+  --color-secondary-light: #dcedc8;
+  --color-secondary-dark: #8bc34a;
+
+  /* Accenti */
+  --color-accent: #ffcb6b;
+  --color-accent-light: #ffe082;
+  --color-accent-dark: #ffa000;
+
+  /* Hover/interazioni */
+  --color-hover: #80cbc4;
+
+  /* Tag */
+  --color-tag-bg: #ffffff14;
+  --color-tag-text: #f1f1f1;
+
+  /* Colori tematici aggiuntivi */
+  --color-blue: #9cdcfe;
+  --color-green: #6a9955;
+  --color-yellow: #dcdcaa;
+  --color-orange: #ce9178;
+  --color-purple: #c586c0;
+  --color-cyan: #4ec9b0;
+  --color-pink: #d16969;
+
+  /* Bordi Indent */
+  --color-ed-borderleft:#b3afb1;
+  
+  --color-exp-borderleft:#f57c00;
+  --color-exp-borderleft-duty: #e0e0e0; 
+}
+
+/* ==================================================================================================================================== */
+
+/* ===== Modalità Light (con classe .light su <html>) ===== */
+html.light {
+  /* Tipografia */
+  --font-family-base: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+
+  /* Colori base */
+  --color-text: #1a1a1a;
+  --color-muted: #666666;
+  --color-border: #cccccc;
+  --color-theme-banner: #a1cdf0; 
+  --color-banner-footer: #a1cdf0;
+
+  /* Sfondi */
+  --color-bg: #ffffff;
+  --color-bg-light: #f3f3f3;
+  --color-card-bg: #f9f9f9;
+
+  /* Colori principali */
+  --color-primary: #1e88e5;
+  --color-primary-light: #64b5f6;
+  --color-primary-dark: #1565c0;
+
+  /* Colori secondari */
+  --color-secondary: #43a047;
+  --color-secondary-light: #81c784;
+  --color-secondary-dark: #2e7d32;
+
+  /* Accenti */
+  --color-accent: #ffb300;
+  --color-accent-light: #ffd54f;
+  --color-accent-dark: #ff8f00;
+
+  /* Hover/interazioni */
+  --color-hover: #1565c0;
+
+  /* Tag */
+  --color-tag-bg: #e0e0e0;
+  --color-tag-text: #000000;
+
+  /* Colori tematici aggiuntivi */
+  --color-blue: #1976d2;
+  --color-green: #388e3c;
+  --color-yellow: #fbc02d;
+  --color-orange: #f57c00;
+  --color-purple: #8e24aa;
+  --color-cyan: #00acc1;
+  --color-pink: #d81b60;
+
+  /* Bordi Indent */
+  --color-ed-borderleft:#ce9178;
+
+  --color-exp-borderleft-duty: #676767;
+
+}

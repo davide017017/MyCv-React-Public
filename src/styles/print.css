@@ -1,0 +1,86 @@
+@media print {
+  /* Impostazioni generali per la stampa su formato A4 */
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  /* Variabili per stampa SCURA */
+  body.print-dark {
+    --color-bg: #0f0f0f;
+    --color-text: #f0f0f0;
+    --color-card-bg: #1a1a1a;
+    --color-primary: #00b4d8;
+    --color-border: #333;
+
+
+  }
+
+  /* Variabili per stampa CHIARA */
+  body.print-light {
+    --color-bg: #ffffff;
+    --color-text: #111111;
+    --color-card-bg: #f8f9fa;
+    --color-primary: #1565c0;
+    --color-border: #ccc;
+  }
+
+  html,
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-size: 11px;
+    width: 210mm;
+    height: 297mm;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Nasconde elementi fuori dalla stampa */
+  .no-print,
+  .print\:hidden {
+    display: none !important;
+  }
+
+  /* Layout principale del CV */
+  #cv-to-print {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5cm;
+    padding: 1cm 0.4cm;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+  }
+
+  /* Badge: stile uniforme per tag e skill */
+  .badge {
+    display: inline-block;
+    padding: 0.15rem 0.4rem;
+    border-radius: 0.4rem;
+    font-size: 0.75rem;
+    background-color: var(--color-card-bg);
+    color: var(--color-text);
+    border: 1px solid var(--color-border);
+    margin: 0.1rem;
+  }
+
+  /* Dimensioni testo compatte */
+  .text-xs { font-size: 10px !important; }
+  .text-sm { font-size: 11px !important; }
+  .text-base { font-size: 12px !important; }
+  .text-lg { font-size: 13px !important; }
+
+  /* Forza correzione colori chiari/scuri */
+  #cv-to-print .text-black {
+    color: var(--color-text) !important;
+  }
+
+  #cv-to-print .bg-white,
+  #cv-to-print .bg-gray-100 {
+    background-color: var(--color-card-bg) !important;
+    border: 1px solid var(--color-border);
+  }
+}
