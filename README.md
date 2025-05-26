@@ -1,16 +1,22 @@
-#TODO
+# 👨‍💻 Davide Martinico
 
-<!-- # React + TypeScript + Vite
+Full-Stack Developer in formazione, appassionato di web e tecnologie moderne.  
+🔗 [Portfolio](https://davide-martinico-portfolio.netlify.app/) • [CV ↓](#-curriculum-vitae)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 📄 Curriculum Vitae
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Visualizza e scarica il mio CV in due versioni:
 
-## Expanding the ESLint configuration
+### 🌙 Modalità Scura
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+[![Anteprima CV Scuro](./preview-dark.jpg)](./cv-dark.pdf)  
+📄 [Scarica PDF](./cv-dark.pdf)
 
-- Configure the top-level `parserOptions` property like this:
+---
+
+### ☀️ Modalità Chiara
+
+[![Anteprima CV Chiaro](./preview-light.jpg)](./cv-light.pdf)  
+📄 [Scarica PDF](./cv-light.pdf)
