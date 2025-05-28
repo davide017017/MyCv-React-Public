@@ -9,7 +9,10 @@ const Contact = () => {
       <ul className="space-y-2 text-sm flex flex-col items-center border-t border-border pt-3">
         <li className="flex items-center gap-2">
           <Mail className="w-4 h-4 text-blue-500" />
-          <a href={`mailto:${email}`} className="text-sm text-text hover:text-emerald-300 transition">
+          <a
+            href={`mailto:${email}`}
+            className="text-sm text-text hover:text-emerald-300 transition"
+          >
             {email}
           </a>
         </li>
@@ -37,11 +40,9 @@ const Contact = () => {
           >
             <div className="flex items-center gap-2">
               <Globe className="w-4 h-4 text-indigo-500" />
-              <span>Portfolio:</span>
+              <span>Portfolio</span>
             </div>
-            <div className="mt-1">
-              davide-martinico-portfolio.netlify.app
-            </div>
+            <div className="mt-1">davide-martinico-portfolio.netlify.app</div>
           </a>
         </li>
       </ul>

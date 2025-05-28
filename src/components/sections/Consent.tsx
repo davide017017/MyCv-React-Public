@@ -4,8 +4,8 @@ import { FileText } from 'lucide-react';
 const Consent = () => (
   <section className="mt-4 px-4 print:mt-2">
     <p className="text-sm italic text-muted flex items-start gap-2 leading-snug">
-      <FileText className="w-8 h-8 text-muted mt-0.5" />
-      {cvData.consent}
+      <FileText className="w-10 h-10 text-muted" />
+      <p className="pt-2">{cvData.consent}</p>
     </p>
   </section>
 );
