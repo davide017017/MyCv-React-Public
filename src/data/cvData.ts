@@ -9,6 +9,7 @@ export const cvData: CvData = {
     phone: '340 3496620',
     github: 'davide017017',
     role: 'Junior Full-Stack Developer',
+    portfolio: 'https://davide-martinico-portfolio.netlify.app/',
   },
 
   aboutMe: `Dopo oltre 10 anni di esperienza nel settore GDO e Retail, 

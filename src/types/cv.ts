@@ -40,6 +40,7 @@ export type CvData = {
       phone: string;
       github: string;
       role: string;
+      portfolio:string;
     };
     aboutMe: string;
     education: Education[];
