@@ -1,4 +1,3 @@
-
 import type { CvData } from '../types/cv';
 
 export const cvData: CvData = {
@@ -95,15 +94,12 @@ export const cvData: CvData = {
         { name: 'HTML5/CSS3/Sass' },
         { name: 'JavaScript' },
         { name: 'React' },
+        { name: 'Next.js' },
         { name: 'TypeScript' },
-        { name: 'Tailwind CSS' }
+        { name: 'Tailwind CSS' },
+        { name: 'Blade' },
       ],
-      backend: [
-        { name: 'Node.js' },
-        { name: 'Laravel' },
-        { name: 'PHP' },
-        { name: 'MySQL' }
-      ]
+      backend: [{ name: 'Node.js' }, { name: 'Laravel' }, { name: 'PHP' }, { name: 'MySQL' }],
     },
     tools: [
       { name: 'Photoshop' },
@@ -132,15 +128,14 @@ export const cvData: CvData = {
     { name: 'Inglese', level: 'B2' },
   ],
 
-interests: [
-  { label: 'Informatica', icon: 'Code' },
-  { label: 'Giardinaggio', icon: 'Leaf' },
-  { label: 'Manga', icon: 'Book' },
-  { label: 'Viaggi', icon: 'Plane' },
-  { label: 'Batteria (strumento musicale)', icon: 'Music' },
-  { label: 'Cucina', icon: 'Flame' },
-],
-
+  interests: [
+    { label: 'Informatica', icon: 'Code' },
+    { label: 'Giardinaggio', icon: 'Leaf' },
+    { label: 'Manga', icon: 'Book' },
+    { label: 'Viaggi', icon: 'Plane' },
+    { label: 'Batteria (strumento musicale)', icon: 'Music' },
+    { label: 'Cucina', icon: 'Flame' },
+  ],
 
   license: 'B',
 

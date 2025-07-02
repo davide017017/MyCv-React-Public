@@ -2,7 +2,7 @@ import { cvData } from '../../data/cvData';
 import profilePhoto from '../../assets/img/photodavidemartinico.jpg';
 
 const Photo = () => (
-  <div className="flex justify-center py-3">
+  <div className="flex justify-center py-3 print:py-2">
     <img
       src={profilePhoto}
       alt={`Foto profilo di ${cvData.personalInfo.name}`}

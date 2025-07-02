@@ -11,7 +11,7 @@ const iconComponents: Record<string, JSX.Element> = {
 };
 
 const Interests = () => (
-  <section className="mb-6 px-4 print:mb-2">
+  <section className="mb-6 px-4 print:mb-0">
     <h2 className="text-xl font-semibold text-primary mb-2 border-b border-border pb-1 flex items-center gap-2 print:text-lg">
       <HeartHandshake className="w-5 h-5 text-primary" />
       Interessi
