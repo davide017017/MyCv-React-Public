@@ -11,6 +11,7 @@ import Patent from './sections/Patent';
 import Consent from './sections/Consent';
 import Photo from './sections/Photo';
 import Contact from './sections/Contact';
+import Certifications from './sections/Certifications';
 
 const CVPage = forwardRef<HTMLDivElement>((_, ref) => {
   return (
@@ -46,12 +47,13 @@ const CVPage = forwardRef<HTMLDivElement>((_, ref) => {
       {/* Colonna destra */}
       <section
         className="
-          flex flex-col gap-6
+          flex flex-col gap-2
           md:w-[70%]
           print:w-[65%] print:break-inside-avoid print:gap-2
         "
       >
         <AboutMe />
+        <Certifications />
         <Education />
         <Experience />
       </section>

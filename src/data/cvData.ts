@@ -1,4 +1,5 @@
 import type { CvData } from '../types/cv';
+import htmlCssBadge from '../assets/img/certifications/it-specialist-html-and-css.png';
 
 export const cvData: CvData = {
   personalInfo: {
@@ -143,5 +144,21 @@ export const cvData: CvData = {
 
   portfolio: 'https://davide-martinico-portfolio.netlify.app/',
 
-  certifications: [],
+  certifications: [
+    {
+      title: 'HTML & CSS Certified',
+      issuer: 'Certiport',
+      date: 'Luglio 2025',
+      // F:\_MIEI LAVORI\CV(React)\my-Cv-MadeWithReact\src\assets\img\certifications\it-specialist-html-and-css.png
+      badgeUrl: htmlCssBadge,
+      verifyUrl: 'https://www.credly.com/badges/4c527832-86a7-4af1-b7e7-39d231effd3e/public_url',
+    },
+    // {
+    //   title: 'JavaScript Specialist',
+    //   issuer: 'Certiport',
+    //   date: 'Dicembre 2025',
+    //   badgeUrl: '/assets/img/certifications/js-specialist.png',
+    //   verifyUrl: 'https://www.credly.com/badges/....',
+    // },
+  ],
 };

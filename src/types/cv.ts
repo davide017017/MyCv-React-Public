@@ -5,7 +5,7 @@ export type ContactInfo = {
 };
 
 export type Skill = {
-    name: string;
+  name: string;
 };
 
 export type SkillSection = {
@@ -14,51 +14,57 @@ export type SkillSection = {
 };
 
 export type Experience = {
-    role: string;
-    company: string;
-    date: string;
-    duties: string[];
+  role: string;
+  company: string;
+  date: string;
+  duties: string[];
 };
 
 export type Education = {
-    title: string;
-    institution: string;
-    date: string;
-    certification?: string;
+  title: string;
+  institution: string;
+  date: string;
+  certification?: string;
 };
 
 export type Language = {
-    name: string;
-    level: string;
+  name: string;
+  level: string;
 };
 
 export type CvData = {
-    personalInfo: {
-      name: string;
-      birthDate: Date;
-      email: string;
-      phone: string;
-      github: string;
-      role: string;
-      portfolio:string;
-    };
-    aboutMe: string;
-    education: Education[];
-    experiences: Experience[];
-    skills: {
-      technical: SkillSection;
-      tools: Skill[];
-      soft: Skill[];
-    };
-    languages: Language[];
-    interests: {
-      label: string;
-      icon: string;
-    }[];
-    license: string;
-    consent: string;
+  personalInfo: {
+    name: string;
+    birthDate: Date;
+    email: string;
+    phone: string;
+    github: string;
+    role: string;
     portfolio: string;
-    certifications: string[];
+  };
+  aboutMe: string;
+  education: Education[];
+  experiences: Experience[];
+  skills: {
+    technical: SkillSection;
+    tools: Skill[];
+    soft: Skill[];
+  };
+  languages: Language[];
+  interests: {
+    label: string;
+    icon: string;
+  }[];
+  license: string;
+  consent: string;
+  portfolio: string;
+  certifications: Certification[];
 };
 
-
+export type Certification = {
+  title: string;
+  issuer: string;
+  date: string;
+  badgeUrl: string;
+  verifyUrl: string;
+};
