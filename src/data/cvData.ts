@@ -36,7 +36,7 @@ export const cvData: CvData = {
     {
       role: 'Addetto vendita',
       company: 'Tecnomat (Adeo)',
-      date: '26 AGO 2024 - in corso ⌛',
+      date: '26 AGO 2024 - 26 AGO 2025',
       duties: ['Consulenza tecnica', 'Vendita prodotti impianti idraulici'],
     },
     {
