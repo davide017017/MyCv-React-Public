@@ -34,6 +34,18 @@ export const cvData: CvData = {
 
   experiences: [
     {
+      role: 'Software Developer',
+      company: 'Ariele Global Services',
+      date: '8 AGO 2024 - now ⌛',
+      duties: [
+        'Sviluppo e manutenzione di applicazioni software',
+        'Integrazione e gestione API REST',
+        'Automazione di processi aziendali e data workflow',
+        'Ottimizzazione performance e sicurezza del codice',
+        'Collaborazione con il team per analisi e miglioramento delle soluzioni',
+      ],
+    },
+    {
       role: 'Addetto vendita',
       company: 'Tecnomat (Adeo)',
       date: '26 AGO 2024 - 26 AGO 2025',
@@ -43,31 +55,31 @@ export const cvData: CvData = {
       role: 'Responsabile Salumi e Formaggi',
       company: 'Eataly',
       date: '27 LUG 2018 - 25 AGO 2024',
-      duties: ['Gestione banco', 'Gestione ordini e turni', 'Relazione fornitori'],
+      duties: ['Gestione banco, ordini e turni', 'Gestione fornitori'],
     },
     {
       role: 'Addetto al banco salumi e formaggi',
       company: 'I Sassi S.a.s.',
       date: '20 OTT 2017 - 26 LUG 2018',
-      duties: ['Gestione banco', 'Gestione ordini'],
+      duties: ['Gestione banco e ordini'],
     },
     {
       role: 'Commesso Banco Gastronomia',
       company: 'Coop',
       date: '20 GEN 2017 - 16 LUG 2017',
-      duties: ['Preparazione alimenti', 'Vendita al cliente'],
+      duties: ['Preparazione alimenti e vendita al cliente'],
     },
     {
       role: 'Cameriere',
       company: 'Cigierre SPA',
       date: '01 OTT 2016 - 20 GEN 2017',
-      duties: ['Servizio in sala', 'Barista'],
+      duties: ['Servizio in sala / Barista'],
     },
     {
       role: 'Responsabile di Negozio',
       company: 'Royal Food Italia S.r.l.',
       date: '25 GIU 2015 - 20 LUG 2016',
-      duties: ['Gestione turni', 'Gestione ordini', 'Gestione incassi', 'Piano di lavoro'],
+      duties: ['Gestione turni - ordini - incassi', 'Piano di lavoro'],
     },
     {
       role: 'Operatore Burger King',
@@ -81,12 +93,12 @@ export const cvData: CvData = {
       date: '20 SET 2010 - 20 AGO 2013',
       duties: ['Gestione negozio', 'Gestione resi', 'Gestione cassa'],
     },
-    {
-      role: 'Addetto smistamento',
-      company: 'CMP - Poste Italiane',
-      date: '06 LUG 2010 - 30 SET 2010',
-      duties: ['Smistamento posta e pacchi'],
-    },
+    // {
+    //   role: 'Addetto smistamento',
+    //   company: 'CMP - Poste Italiane',
+    //   date: '06 LUG 2010 - 30 SET 2010',
+    //   duties: ['Smistamento posta e pacchi'],
+    // },
   ],
 
   skills: {
@@ -100,7 +112,14 @@ export const cvData: CvData = {
         { name: 'Tailwind CSS' },
         { name: 'Blade' },
       ],
-      backend: [{ name: 'Node.js' }, { name: 'Laravel' }, { name: 'PHP' }, { name: 'MySQL' }],
+      backend: [
+        { name: 'Node.js' },
+        { name: 'Laravel' },
+        { name: 'PHP' },
+        { name: 'MySQL' },
+        { name: 'API REST' },
+        { name: 'Automation & Cron Jobs' },
+      ],
     },
     tools: [
       { name: 'Photoshop' },
@@ -134,7 +153,7 @@ export const cvData: CvData = {
     { label: 'Giardinaggio', icon: 'Leaf' },
     { label: 'Manga', icon: 'Book' },
     { label: 'Viaggi', icon: 'Plane' },
-    { label: 'Batteria (strumento musicale)', icon: 'Music' },
+    { label: 'Batteria', icon: 'Music' },
     { label: 'Cucina', icon: 'Flame' },
   ],
 
