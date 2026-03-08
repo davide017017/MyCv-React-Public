@@ -32,6 +32,7 @@
 
   /* Hover/interazioni */
   --color-hover: #80cbc4;
+  --color-link-hover: #6ee7b7;
 
   /* Tag */
   --color-tag-bg: #ffffff14;
@@ -47,10 +48,10 @@
   --color-pink: #d16969;
 
   /* Bordi Indent */
-  --color-ed-borderleft:#b3afb1;
-  
-  --color-exp-borderleft:#f57c00;
-  --color-exp-borderleft-duty: #e0e0e0; 
+  --color-ed-borderleft: #6e8d45;
+
+  --color-exp-borderleft: #f57c00;
+  --color-exp-borderleft-duty: #e0e0e0;
 }
 
 /* ==================================================================================================================================== */
@@ -64,7 +65,7 @@ html.light {
   --color-text: #1a1a1a;
   --color-muted: #666666;
   --color-border: #cccccc;
-  --color-theme-banner: #a1cdf0; 
+  --color-theme-banner: #a1cdf0;
   --color-banner-footer: #a1cdf0;
 
   /* Sfondi */
@@ -89,6 +90,7 @@ html.light {
 
   /* Hover/interazioni */
   --color-hover: #1565c0;
+  --color-link-hover: #1565c0;
 
   /* Tag */
   --color-tag-bg: #e0e0e0;
@@ -104,8 +106,7 @@ html.light {
   --color-pink: #d81b60;
 
   /* Bordi Indent */
-  --color-ed-borderleft:#ce9178;
+  --color-ed-borderleft: #2e7d32;
 
   --color-exp-borderleft-duty: #676767;
-
 }

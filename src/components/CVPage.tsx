@@ -1,5 +1,3 @@
-import { forwardRef } from 'react';
-
 import Name from './sections/Name';
 import AboutMe from './sections/AboutMe';
 import Education from './sections/Education';
@@ -13,10 +11,9 @@ import Photo from './sections/Photo';
 import Contact from './sections/Contact';
 import Certifications from './sections/Certifications';
 
-const CVPage = forwardRef<HTMLDivElement>((_, ref) => {
+const CVPage = () => {
   return (
     <main
-      ref={ref}
       id="cv-to-print"
       className="
         text-[10px] leading-[1.1] print:text-[9.5px] print:leading-[1.1]
@@ -29,10 +26,12 @@ const CVPage = forwardRef<HTMLDivElement>((_, ref) => {
       {/* Colonna sinistra */}
       <aside
         className="
-          flex flex-col gap-6
-          md:w-[30%]
-          print:w-[35%] print:break-inside-avoid print:gap-2
-        "
+        flex flex-col gap-6
+        md:w-[30%]
+        print:w-[35%] print:break-inside-avoid print:gap-2
+        bg-[var(--color-bg-light)] rounded-xl p-4
+        print:bg-transparent print:rounded-none print:p-0
+      "
       >
         <Photo />
         <Name />
@@ -59,6 +58,6 @@ const CVPage = forwardRef<HTMLDivElement>((_, ref) => {
       </section>
     </main>
   );
-});
+};
 
 export default CVPage;

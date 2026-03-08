@@ -2,11 +2,11 @@
 import { cvData } from '../../data/cvData';
 
 const Certifications = () => (
-  <section className="mb-1 px-4">
+  <section className="mb-1 px-4" aria-label="Certificazioni">
     <div className="flex flex-wrap items-center gap-5">
       {cvData.certifications.map((cert, idx) => (
         <div key={idx} className="flex items-center gap-3 mb-0">
-          <a href={cert.verifyUrl} target="_blank" rel="noopener noreferrer">
+          <a href={cert.verifyUrl} target="_blank" rel="noopener noreferrer" aria-label={`Verifica certificazione ${cert.title} su Credly (apre in nuova scheda)`}>
             <img
               src={cert.badgeUrl}
               alt={cert.title}

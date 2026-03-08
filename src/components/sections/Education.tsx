@@ -3,9 +3,9 @@ import type { Education as EducationType } from '../../types';
 import { GraduationCap } from 'lucide-react';
 
 const Education = () => (
-  <section className="mb-6 px-4">
+  <section className="mb-6 px-4" aria-label="Formazione">
     <h2 className="text-2xl font-semibold text-primary mb-2  border-b border-border pb-1 flex items-center gap-2 print:text-lg">
-      <GraduationCap className="w-5 h-5 text-primary print:w-6 print:h-6" />
+      <GraduationCap className="w-5 h-5 text-primary print:w-6 print:h-6" aria-hidden="true" />
       Formazione
     </h2>
     <ul className="space-y-6">

@@ -25,6 +25,8 @@ function App() {
           <span className="text-sm">🌙</span>
           <button
             onClick={toggleTheme}
+            aria-label={`Passa al tema ${theme === 'dark' ? 'chiaro' : 'scuro'}`}
+            aria-pressed={theme === 'light'}
             className={`relative w-14 h-7 rounded-full transition-colors duration-300 flex items-center
               ${theme === 'dark' ? 'bg-[var(--color-primary)]' : 'bg-yellow-400'}`}
           >
@@ -58,6 +60,8 @@ function App() {
                 onClick={() =>
                   setPrintMode((prev) => (prev === 'print-dark' ? 'print-light' : 'print-dark'))
                 }
+                aria-label={`Passa a modalità stampa ${printMode === 'print-dark' ? 'chiara' : 'scura'}`}
+                aria-pressed={printMode === 'print-light'}
                 className={`relative w-14 h-7 rounded-full transition-colors duration-300 flex items-center
                   ${printMode === 'print-dark' ? 'bg-[var(--color-primary)]' : 'bg-yellow-400'}`}
               >
@@ -80,6 +84,7 @@ function App() {
           {/* Bottone stampa */}
           <button
             onClick={handlePrint}
+            aria-label="Stampa il CV o salvalo come PDF"
             className="px-4 py-1.5 rounded text-sm font-semibold bg-[var(--color-primary)] text-white border border-[var(--color-primary)] shadow hover:brightness-110 transition"
           >
             📄 Stampa (o Salva PDF)

@@ -25,3 +25,14 @@ dist-ssr
 
 # Local Netlify folder
 .netlify
+
+ZZZNOTEMIE
+.claude
+
+# Build output
+dist
+
+# Generated CV exports & previews
+*.pdf
+preview-*.jpg
+preview-*.png

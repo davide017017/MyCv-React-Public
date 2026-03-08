@@ -3,9 +3,9 @@ import type { Experience as ExperienceType } from '../../types';
 import { Briefcase } from 'lucide-react';
 
 const Experience = () => (
-  <section className="mb-6 px-4 print:px-2 print:mb-4">
+  <section className="mb-6 px-4 print:px-2 print:mb-4" aria-label="Esperienze Lavorative">
     <h2 className="text-2xl font-semibold text-primary mb-2 border-b border-border pb-1 flex items-center gap-2 print:text-lg print:mb-1">
-      <Briefcase className="w-5 h-5 text-primary print:w-6 print:h-6" />
+      <Briefcase className="w-5 h-5 text-primary print:w-6 print:h-6" aria-hidden="true" />
       Esperienze Lavorative
     </h2>
     <ul className="space-y-6 compact print:space-y-3 ">

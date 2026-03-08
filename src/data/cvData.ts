@@ -1,5 +1,6 @@
 import type { CvData } from '../types/cv';
 import htmlCssBadge from '../assets/img/certifications/it-specialist-html-and-css.png';
+import jsBadge from '../assets/img/certifications/ITS-Badges_JavaScript_1200px.png';
 
 export const cvData: CvData = {
   personalInfo: {
@@ -12,23 +13,27 @@ export const cvData: CvData = {
     portfolio: 'https://davide-martinico-portfolio.netlify.app/',
   },
 
-  aboutMe: `Dopo oltre 10 anni di esperienza nel settore GDO e Retail, 
-  dove ho ricoperto ruoli di gestione e coordinamento, 
-  sto completando la mia formazione come Full Stack Web Developer. 
-  Cerco un'opportunità in ambito IT per unire competenze tecniche e soft skills, 
-  con un forte orientamento al lavoro di squadra e agli obiettivi.`,
+  aboutMe: `Vengo dal mondo retail, dove ho gestito team e processi per oltre 
+      10 anni. Seguendo una passione, ho scelto di reinventarmi come Full Stack Developer 
+      con l'obiettivo di crescere in questo settore, non solo attraverso il lavoro 
+      ma anche con progetti personali che porto avanti ogni giorno. 
+      Sono una persona curiosa per natura: non mi fermo al codice, ma esploro 
+      nuove tecnologie, strumenti e processi di sviluppo software. 
+      Aver fatto della passione un lavoro mi spinge ad apprendere velocemente, 
+      ad affrontare ogni ostacolo come un'opportunità e a dare il massimo 
+      per raggiungere gli obiettivi, senza paura di mettermi in gioco.`,
 
   education: [
     {
       title: 'Corso Full Stack Web Developer',
       institution: 'Musa Formazione',
-      date: '01/08/2024 - in corso ⌛',
+      date: '01 AGO 2024 - 01 SETT 2025',
       certification: 'IC-PHP, HTML CSS, JavaScript',
     },
     {
       title: 'Diploma di Tecnico dei Sistemi Energetici',
       institution: 'I.P.S.I.A. A.Meucci',
-      date: '14/07/2009',
+      date: '14 LUG 2009',
     },
   ],
 
@@ -36,12 +41,12 @@ export const cvData: CvData = {
     {
       role: 'Software Developer',
       company: 'Ariele Global Services',
-      date: '8 AGO 2024 - now ⌛',
+      date: '8 AGO 2024 - In corso ⌛',
       duties: [
-        'Sviluppo e manutenzione di applicazioni software',
-        'Integrazione e gestione API REST',
-        'Automazione di processi aziendali e data workflow',
-        'Ottimizzazione performance e sicurezza del codice',
+        'Sviluppo full stack di applicazioni web dalla progettazione al deploy',
+        'Integrazione API REST e gestione di flussi dati complessi',
+        'Automazione di processi per ridurre il lavoro manuale e gli errori',
+        'Cura della qualità del codice in termini di performance e sicurezza',
         'Collaborazione con il team per analisi e miglioramento delle soluzioni',
       ],
     },
@@ -79,7 +84,7 @@ export const cvData: CvData = {
       role: 'Responsabile di Negozio',
       company: 'Royal Food Italia S.r.l.',
       date: '25 GIU 2015 - 20 LUG 2016',
-      duties: ['Gestione turni - ordini - incassi', 'Piano di lavoro'],
+      duties: ['Gestione turni - ordini - incassi - Piano di lavoro'],
     },
     {
       role: 'Operatore Burger King',
@@ -91,7 +96,7 @@ export const cvData: CvData = {
       role: 'Edicolante',
       company: 'Edicola stazione Brignole',
       date: '20 SET 2010 - 20 AGO 2013',
-      duties: ['Gestione negozio', 'Gestione resi', 'Gestione cassa'],
+      duties: ['Gestione autonoma del punto vendita'],
     },
     // {
     //   role: 'Addetto smistamento',
@@ -104,42 +109,38 @@ export const cvData: CvData = {
   skills: {
     technical: {
       frontend: [
-        { name: 'HTML5/CSS3/Sass' },
+        { name: 'HTML5 / CSS3 ' },
         { name: 'JavaScript' },
+        { name: 'TypeScript' },
         { name: 'React' },
         { name: 'Next.js' },
-        { name: 'TypeScript' },
         { name: 'Tailwind CSS' },
-        { name: 'Blade' },
       ],
       backend: [
-        { name: 'Node.js' },
-        { name: 'Laravel' },
         { name: 'PHP' },
+        { name: 'Laravel' },
+        { name: 'Node.js' },
+        { name: 'Python / FastAPI' },
         { name: 'MySQL' },
+        { name: 'PostgreSQL' },
         { name: 'API REST' },
         { name: 'Automation & Cron Jobs' },
       ],
     },
     tools: [
-      { name: 'Photoshop' },
-      { name: 'Illustrator' },
-      { name: 'MS Office (Outlook)' },
-      { name: 'AutoCAD' },
-      { name: 'D365' },
-      { name: 'Visual Studio Code' },
-      { name: 'MySQL Workbench' },
+      { name: 'Git / GitHub' },
       { name: 'Docker' },
+      { name: 'VS Code' },
+      { name: 'MySQL Workbench' },
+      { name: 'MS Office' },
+      { name: 'Adobe Creative Suite' },
+      { name: 'AutoCAD' },
     ],
     soft: [
-      { name: 'Teamwork' },
-      { name: 'Communication' },
-      { name: 'Time Management' },
       { name: 'Problem-Solving' },
-      { name: 'Continuous Learning' },
+      { name: 'Team & Leadership' },
+      { name: 'Fast Learner' },
       { name: 'Adaptability' },
-      { name: 'Customer Service' },
-      { name: 'Leadership' },
     ],
   },
 
@@ -157,7 +158,7 @@ export const cvData: CvData = {
     { label: 'Cucina', icon: 'Flame' },
   ],
 
-  license: 'B',
+  license: 'B - Automunito',
 
   consent: `Autorizzo il trattamento dei miei dati personali ai sensi del Dlgs 196 del 30 giugno 2003 e dell'art. 13 GDPR`,
 
@@ -172,12 +173,12 @@ export const cvData: CvData = {
       badgeUrl: htmlCssBadge,
       verifyUrl: 'https://www.credly.com/badges/4c527832-86a7-4af1-b7e7-39d231effd3e/public_url',
     },
-    // {
-    //   title: 'JavaScript Specialist',
-    //   issuer: 'Certiport',
-    //   date: 'Dicembre 2025',
-    //   badgeUrl: '/assets/img/certifications/js-specialist.png',
-    //   verifyUrl: 'https://www.credly.com/badges/....',
-    // },
+    {
+      title: 'JavaScript Specialist',
+      issuer: 'Certiport',
+      date: 'Dicembre 2025',
+      badgeUrl: jsBadge,
+      verifyUrl: 'https://www.credly.com/badges/4be4a445-43f5-4f05-b55f-23fc5b88540c',
+    },
   ],
 };
