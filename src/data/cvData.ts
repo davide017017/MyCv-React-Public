@@ -13,15 +13,21 @@ export const cvData: CvData = {
     portfolio: 'https://davide-martinico-portfolio.netlify.app/',
   },
 
-  aboutMe: `Vengo dal mondo retail, dove ho gestito team e processi per oltre 
-      10 anni. Seguendo una passione, ho scelto di reinventarmi come Full Stack Developer 
-      con l'obiettivo di crescere in questo settore, non solo attraverso il lavoro 
-      ma anche con progetti personali che porto avanti ogni giorno. 
-      Sono una persona curiosa per natura: non mi fermo al codice, ma esploro 
-      nuove tecnologie, strumenti e processi di sviluppo software. 
-      Aver fatto della passione un lavoro mi spinge ad apprendere velocemente, 
-      ad affrontare ogni ostacolo come un'opportunità e a dare il massimo 
-      per raggiungere gli obiettivi, senza paura di mettermi in gioco.`,
+  // aboutMe: `Vengo dal mondo retail, dove ho gestito team e processi per oltre
+  //     10 anni. Seguendo una passione, ho scelto di reinventarmi come Full Stack Developer
+  //     con l'obiettivo di crescere in questo settore, non solo attraverso il lavoro
+  //     ma anche con progetti personali che porto avanti ogni giorno.
+  //     Sono una persona curiosa per natura: non mi fermo al codice, ma esploro
+  //     nuove tecnologie, strumenti e processi di sviluppo software.
+  //     Aver fatto della passione un lavoro mi spinge ad apprendere velocemente,
+  //     ad affrontare ogni ostacolo come un'opportunità e a dare il massimo
+  //     per raggiungere gli obiettivi, senza paura di mettermi in gioco.`,
+
+  aboutMe: `Vengo dal mondo retail, dove ho gestito team e processi per oltre 10 anni. 
+          Seguendo una passione, mi sono reinventato come Full Stack Developer, con l’obiettivo 
+          di crescere nel settore attraverso lavoro e progetti personali. 
+          Sono curioso e orientato all’apprendimento continuo: esploro nuove tecnologie e 
+          affronto ogni sfida come un’opportunità, dando sempre il massimo per raggiungere gli obiettivi.`,
 
   education: [
     {
@@ -169,16 +175,25 @@ export const cvData: CvData = {
       title: 'HTML & CSS Certified',
       issuer: 'Certiport',
       date: 'Luglio 2025',
-      // F:\_MIEI LAVORI\CV(React)\my-Cv-MadeWithReact\src\assets\img\certifications\it-specialist-html-and-css.png
-      badgeUrl: htmlCssBadge,
-      verifyUrl: 'https://www.credly.com/badges/4c527832-86a7-4af1-b7e7-39d231effd3e/public_url',
+
+      thumbUrl: '/certificates/htmlCSS.jpg',
+      imageUrl: '/certificates/htmlCSS.jpg',
     },
     {
       title: 'JavaScript Specialist',
       issuer: 'Certiport',
       date: 'Dicembre 2025',
-      badgeUrl: jsBadge,
-      verifyUrl: 'https://www.credly.com/badges/4be4a445-43f5-4f05-b55f-23fc5b88540c',
+
+      thumbUrl: '/certificates/js.jpg',
+      imageUrl: '/certificates/js.jpg',
+    },
+    {
+      title: 'PHP Fundamentals',
+      issuer: 'ICPHP',
+      date: '2026',
+
+      thumbUrl: '/certificates/php.jpg',
+      imageUrl: '/certificates/php.jpg',
     },
   ],
 };

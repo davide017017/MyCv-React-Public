@@ -65,6 +65,6 @@ export type Certification = {
   title: string;
   issuer: string;
   date: string;
-  badgeUrl: string;
-  verifyUrl: string;
+  thumbUrl: string; // piccolo
+  imageUrl: string; // grande
 };
