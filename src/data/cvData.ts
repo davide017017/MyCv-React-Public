@@ -47,7 +47,7 @@ export const cvData: CvData = {
     {
       role: 'Software Developer',
       company: 'Ariele Global Services',
-      date: '8 AGO 2024 - In corso ⌛',
+      date: '28 SETT 2025 - In corso ',
       duties: [
         'Sviluppo full stack di applicazioni web dalla progettazione al deploy',
         'Integrazione API REST e gestione di flussi dati complessi',
