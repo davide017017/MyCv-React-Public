@@ -23,11 +23,11 @@ export const cvData: CvData = {
   //     ad affrontare ogni ostacolo come un'opportunità e a dare il massimo
   //     per raggiungere gli obiettivi, senza paura di mettermi in gioco.`,
 
-  aboutMe: `Vengo dal mondo retail, dove ho gestito team e processi per oltre 10 anni. 
-          Seguendo una passione, mi sono reinventato come Full Stack Developer, con l’obiettivo 
-          di crescere nel settore attraverso lavoro e progetti personali. 
-          Sono curioso e orientato all’apprendimento continuo: esploro nuove tecnologie e 
-          affronto ogni sfida come un’opportunità, dando sempre il massimo per raggiungere gli obiettivi.`,
+  aboutMe: `Dopo oltre dieci anni di esperienza nel retail, 
+      oggi lavoro come Software Developer presso Ariele Global Services. 
+      Mi occupo dello sviluppo full stack di Hopy/OPI Suite 
+      e continuo a crescere nel settore attraverso progetti concreti 
+      e apprendimento continuo.`,
 
   education: [
     {
@@ -49,11 +49,11 @@ export const cvData: CvData = {
       company: 'Ariele Global Services',
       date: '28 SETT 2025 - In corso ',
       duties: [
-        'Sviluppo full stack di applicazioni web dalla progettazione al deploy',
-        'Integrazione API REST e gestione di flussi dati complessi',
-        'Automazione di processi per ridurre il lavoro manuale e gli errori',
-        'Cura della qualità del codice in termini di performance e sicurezza',
-        'Collaborazione con il team per analisi e miglioramento delle soluzioni',
+        'Sviluppo full stack di Hopy/OPI Suite, piattaforma gestionale per il settore degli affitti brevi e dell’ospitality',
+        'Sviluppo di funzionalità per prenotazioni, attività operative e comunicazioni WhatsApp automatizzate',
+        'Integrazione di API REST, gestione dei flussi dati e automazione dei processi',
+        'Rilascio delle funzionalità tramite workflow GitHub Actions',
+        'Attenzione alla qualità del codice, alle performance e alla sicurezza',
       ],
     },
     {
